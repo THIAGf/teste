@@ -146,11 +146,16 @@ div span{
     font-family: fonnte;
     src: url(bruce-forever-font/BruceForeverRegular-X3jd2.ttf);
 }
-@media  screen and (max-widht:768px) {
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
+@media screen and (max-width: 768px) {
+    body{
+        font-size: 10px;
+        width: 100%;
+        min-height: 100vh;
         height: auto;
-    }
+        background-image: url(img/ff.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        color:blue;
+        font-family: fonnte;
+     }
 }
