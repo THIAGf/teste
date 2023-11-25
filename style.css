@@ -158,4 +158,21 @@ div span{
         color:blue;
         font-family: fonnte;
      }
+
+       .container{
+        width:300px;   
+        max-width: 200%;   
+        box-shadow: 2px 2px 2px white;
+        border: 1px solid greenyellow;
+        border-radius: 20px 10px 20px 10px ;
+        text-align: center;
+        color: greenyellow;
+        margin:auto;
+        margin-top: 50px;
+        backdrop-filter: inherit;
+        padding: 25px;
+        transition: 2s;
+        overflow: hidden;
+        font-size: 20px;
+        }
 }
