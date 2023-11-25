@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<div id="frase">
+    <h1>Apps/Games</h1>
+    <p>Sempre Gratis</p>
+</div> 
+<body>  
+    <div class="container">  
+        <form>
+            <h1>Tela de login</h1>
+            <label for="email">Email:</label>
+
+            <div id="email-container">
+                <input type="email" name="email" id="email" placeholder="inserir seu email">
+
+                <div id="test">
+                <button id="autocomplete-btn" onclick="autocompleteEmail()"  type="button" title="Clique para mostrar a senha">@gmail.com</button>
+                <span id="tooltip">Clique para mostrar a senha</span>
+                </div>
+            </div>
+
+            <label for="password">Senha:</label>
+            <div id="password-container">
+                <input type="password" name="password" placeholder="Digite sua senha" id="password" title="Digite sua senha">
+
+                <div id="eye-container">
+
+                  <div id="test">
+                    <img src="img/eye.svg" alt="" title="Clique para mostrar a senha">
+                    <span id="tooltip">Clique para mostrar a senha</span>
+                  </div>
+
+
+                </div>
+            </div>
+            <p id="recu">Esqueci minha senha?</p>
+            <p id="recu">Novo aqui?</p>
+            <button id="entrar" type="submit">Entrar</button>
+        </form>
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

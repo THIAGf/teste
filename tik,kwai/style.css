@@ -1,0 +1,52 @@
+div{
+display:inline-flex;
+margin:30px;
+font-size: 30px;
+}
+#tiktok{
+    background-color: black;
+    color: white;
+    border-radius: 10px 0px 0px 10px;
+    transition: 2s;
+}
+#kwai{
+    background-color:orangered;
+     border-radius: 0px 10px 10px 0px;
+     transition: 2s;
+}
+#tiktok:hover,#kwai:hover{
+    transition: 2s;
+    transform: scale(1.06);
+}
+#tt{
+    border-radius: 10px;
+    border: 2px solid black;
+    width: 520px;
+    height:100px;
+    margin: auto;
+    text-align: center;
+    transition: 2s;
+}
+#tt:hover{
+   transition: 2s;
+   transform: scale(1.2);
+}
+input{
+    margin-left:-300px;
+    background-color: transparent;
+    border: none;
+}
+input{
+    margin-left:-300px;
+    background-color: transparent;
+    border: none;
+    font-size: 15px;
+    transition: 2s;
+}
+input:hover{
+    transform: scale(1.2);
+    transition: 2s;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+}

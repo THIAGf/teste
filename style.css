@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   width: 100%;
+   min-height: 100vh;
+   height: auto;
+   background-image: url(img/ff.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   color:greenyellow;
+   font-family: fonnte;
+}
+@font-face{
+    font-family: fonnte;
+    src: url(bruce-forever-font/BruceForeverRegular-X3jd2.ttf);
+}
+#password:hover,#email:hover,#completar:hover,#entrar:hover,#autocomplete-btn:hover{
+   transform: scale(1.18);
+   transition: 0.80s; 
+   color: greenyellow;
+   border-radius: 100px;
+   padding: 20px;
+}
+#email,#password,#completar,#autocomplete-btn{
+    cursor: pointer;
+    box-shadow: 3px 3p, 3px greenyellow;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.80s;
+    width:250px;
+    height:40px;
+    margin: 10px;
+    display: flex; 
+    background-color: transparent;
+    color:greenyellow;
+    font-family: fonnte;
+   
+}  
+#autocomplete-btn{
+    height: 30px;
+    width: 100px;
+    padding: 20px;
+    margin: auto;
+    border: none;
+}
+#entrar{
+    width:250px;
+    height:40px;
+    cursor: pointer;
+    transition: 0.80s;
+    border-radius: 10px;
+    background-color: transparent;
+    color: greenyellow;
+    font-family: fonnte;
+   
+}
+input::placeholder{
+  color:greenyellow;
+}
+#recu{
+    margin:3px;
+    transition: 0.80s;
+    cursor: pointer;
+    font-size: 10px;
+ }
+#recu:hover{
+   transform: scale(1.2);
+   transition: 0.80s;
+   color: greenyellow;
+}
+.container{
+    width:400px;
+    height:auto;
+    max-width: 200%;   
+    box-shadow: 2px 2px 2px greenyellow;
+    border: 1px solid greenyellow;
+    border-radius: 20px 10px 20px 10px ;
+    text-align: center;
+    color: greenyellow;
+    margin:auto;
+    margin-top: 50px;
+    backdrop-filter: inherit;
+    padding: 25px;
+    transition: 2s;
+    overflow: hidden;
+    font-size: 20px;
+    }
+.container:hover{
+    transform: scale(1.10);
+    background-color: transparent; backdrop-filter: blur(10px);
+    transition: 2s;
+}
+div{
+    display: flex;
+}
+div input,div button{
+    border: none;
+    border-bottom: 1px solid greenyellow;
+    margin: auto;
+}
+div img:hover,div button:hover{
+transform: scale(1.4);
+transition:1s;
+margin: 30px;
+
+}
+div img,div button{
+    transition:1s;
+    margin: 30px;
+
+}
+div span{
+    position: absolute;
+    left: 500px;
+}
+#tooltip{
+    position: absolute;
+    top: -115px;
+    left:25px;
+    height: 115PX;
+    transform: translateX(-50%);
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 17px;
+    border: 1px solid greenyellow;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+}
+#test,#autocomplete-btn{
+    position: relative;
+    display: flex;
+}
+#test img:hover + #tooltip{
+    opacity: 90;
+    visibility: visible;
+}
+#autocomplete-btn button:hover + #tooltip{
+    opacity: 1;
+    visibility: visible;
+}
+#frase{
+    display: list-item;
+  text-align:center;
+
+
+
+
