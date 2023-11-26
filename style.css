@@ -21,18 +21,17 @@ body{
 }
 #email,#password,#completar,#autocomplete-btn{
     cursor: pointer;
-    box-shadow: 3px 3p, 3px greenyellow;
+    box-shadow: 3px 3p, 3px white;
     border-radius: 10px;
     text-align: center;
     transition: 0.80s;
-    width:240px;
+    width:200px;
     height:40px;
-    margin: 10px;
     display: flex; 
     background-color: transparent;
     color:greenyellow;
     font-family: fonnte;
-   
+   margin-left: 20px;
 }  
 #autocomplete-btn{
     height: auto;
@@ -71,7 +70,7 @@ input::placeholder{
     width:400px;   
     max-width: 200%;   
     box-shadow: 2px 2px 2px white;
-    border: 1px solid greenyellow;
+    border: 1px solid blueviolet;
     border-radius: 20px 10px 20px 10px ;
     text-align: center;
     color: greenyellow;
@@ -120,6 +119,7 @@ div span{
     border-radius: 10px;
     font-size: 17px;
     border: 1px solid greenyellow;
+    background-color: black;
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease;
@@ -159,19 +159,44 @@ div span{
         font-family: fonnte;
      }
      .container{
-        width:300px;   
+        width:295px;   
         max-width: 200%;   
-        box-shadow: 2px 2px 2px white;
-        border: 1px solid greenyellow;
-        border-radius: 20px 10px 20px 10px ;
-        text-align: center;
-        color: greenyellow;
         margin:auto;
-        margin-top: 50px;
+        margin-top: 90px;
         backdrop-filter: inherit;
-        padding: 23px;
+        padding: 5px;
         transition: 2s;
         overflow: hidden;
-        font-size: 15px;
+        font-size: 10px;
         }
-}
+        #entrar{
+            width:150px;
+            height:auto;
+            margin-left:-12px;
+            cursor: pointer;
+            transition: 0.80s;
+            border-radius: 10px;
+            background-color: transparent;
+            font-family: fonnte;
+           
+        }
+        #recu{   
+            text-align: center;
+            transition: 0.80s;
+            cursor: pointer;
+            font-size: 10px;
+            color: greenyellow;
+            margin-left: 20px
+         }
+         #tooltip{
+            position: absolute;
+            top: -80px;
+            left:25px;
+            height:auto;
+            padding: 10px;
+            border-radius: 14px;
+            font-size: 10px;
+            border: 1px solid greenyellow;
+            background-color: black;
+        }
+        }
