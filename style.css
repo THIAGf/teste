@@ -28,7 +28,7 @@ body{
     width:200px;
     height:40px;
     display: flex; 
-    background-color: transparent;
+    background-color:transparent;
     color:greenyellow;
     font-family: fonnte;
    margin-left: 20px;
@@ -70,7 +70,7 @@ input::placeholder{
     width:400px;   
     max-width: 200%;   
     box-shadow: 2px 2px 2px white;
-    border: 1px solid blueviolet;
+    border: 1px solid greenyellow;
     border-radius: 20px 10px 20px 10px ;
     text-align: center;
     color: greenyellow;
@@ -148,55 +148,46 @@ div span{
 }
 @media screen and (max-width: 768px) {
     body{
-        font-size: 10px;
-        width: 100%;
+        font-size: 15px;
         min-height: 100vh;
-        height: auto;
         background-image: url(img/ff.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        color:blue;
-        font-family: fonnte;
+        text-align: center;
+        color: blue;
      }
-     .container{
-        width:295px;   
-        max-width: 200%;   
-        margin:auto;
-        margin-top: 90px;
-        backdrop-filter: inherit;
-        padding: 5px;
-        transition: 2s;
-        overflow: hidden;
-        font-size: 10px;
-        }
-        #entrar{
-            width:150px;
-            height:auto;
-            margin-left:-12px;
-            cursor: pointer;
-            transition: 0.80s;
-            border-radius: 10px;
-            background-color: transparent;
-            font-family: fonnte;
-           
-        }
-        #recu{   
-            text-align: center;
-            transition: 0.80s;
-            cursor: pointer;
-            font-size: 10px;
-            color: greenyellow;
-            margin-left: 20px
-         }
+     input,#email,#password{
+        display: block;
+        margin: auto;
+     }
+     #password{
+       width:200px;
+       margin: auto;
+     }
+    .container{
+        text-align: center;
+        height: auto;
+        width:360px;
+    }
          #tooltip{
-            position: absolute;
-            top: -80px;
-            left:25px;
             height:auto;
             padding: 10px;
             border-radius: 14px;
             font-size: 10px;
             border: 1px solid greenyellow;
-            background-color: black;
+            background-color:black;    
         }
-        }
+        div img,div button{
+            transition:1s;    
+            height: 40px;
+            text-align: center;
+            left: 10px;
+ }
+ div img:hover,div button:hover{
+    transform: scale(1.4);
+    transition:1s;
+ }
+ .container:hover{
+    transform: scale(1.02);
+    background-color: transparent; backdrop-filter: blur(10px);
+    transition: 2s;
+}
+}
